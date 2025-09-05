@@ -1,0 +1,49 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.ts",
+    "dev": "nodemon --exec ts-node server.ts",
+    "pm2": "pm2 start server.ts --name server --watch",
+    "pm2:stop": "pm2 stop server",
+    "pm2:delete": "pm2 delete server",
+    "pm2:logs": "pm2 logs server",
+    "pm2:status": "pm2 status server",
+    "pm2:restart": "pm2 restart server",
+    "pm2:save": "pm2 save",
+    "pm2:startup": "pm2 startup",
+    "pm2:unstartup": "pm2 unstartup",
+    "pm2:dump": "pm2 dump",
+    "pm2:reload": "pm2 reload server",
+    "pm2:reset": "pm2 reset server",
+    "pm2:describe": "pm2 describe server",
+    "pm2:monit": "pm2 monit",
+    "pm2:prettylist": "pm2 prettylist",
+    "pm2:prettydump": "pm2 prettydump",
+    "pm2:prettyprint": "pm2 prettyprint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "mysql2": "^3.14.3",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/mysql": "^2.15.27",
+    "@types/node": "^24.3.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
